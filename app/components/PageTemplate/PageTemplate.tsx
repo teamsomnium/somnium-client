@@ -1,5 +1,5 @@
-import type { PropsWithChildren } from 'react';
-import { css } from '@emotion/react';
+import type { PropsWithChildren } from 'react'
+import { css } from '@emotion/react'
 
 const Template = css`
   display: flex;
@@ -9,8 +9,8 @@ const Template = css`
   min-height: 100vh;
   margin: 0 auto;
   background-color: #ffffff;
-`;
+`
 
 export default function PageTemplate({ children }: PropsWithChildren) {
-  return <div css={Template}>{children}</div>;
+  return <main css={Template}>{children}</main>
 }

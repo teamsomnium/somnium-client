@@ -1,15 +1,12 @@
-import { css } from '@emotion/react';
-import { PropsWithChildren } from 'react';
+import { css } from '@emotion/react'
+import { type PropsWithChildren } from 'react'
 
 interface Props {
-  position: 'left' | 'right';
+  position: 'left' | 'right'
 }
 
-export default function HeaderSide({
-  children,
-  position,
-}: PropsWithChildren<Props>) {
-  return <div css={Block(position)}>{children}</div>;
+export default function HeaderSide({ children, position }: PropsWithChildren<Props>) {
+  return <div css={Block(position)}>{children}</div>
 }
 
 const Block = (position: 'left' | 'right') => css`
@@ -19,4 +16,4 @@ const Block = (position: 'left' | 'right') => css`
   height: 100%;
   display: flex;
   align-items: center;
-`;
+`
