@@ -1,16 +1,14 @@
-import * as I from '~/assets';
-import { css } from '@emotion/react';
+import * as I from '~/assets'
+import { css } from '@emotion/react'
 
-interface Props {
-  onClick?: () => void;
-}
+interface Props extends React.HTMLAttributes<HTMLButtonElement> {}
 
-export default function HeaderBurgerMenuButton({ onClick }: Props) {
+export default function HeaderBurgerMenuButton({ ...rest }: Props) {
   return (
-    <button css={Block} onClick={onClick}>
+    <button css={Block} {...rest}>
       <I.BurgerMenu />
     </button>
-  );
+  )
 }
 
 const Block = css`
@@ -21,4 +19,5 @@ const Block = css`
   align-items: center;
   padding: 0.8rem;
   margin-right: -0.8rem;
-`;
+  cursor: pointer;
+`
