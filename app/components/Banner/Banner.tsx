@@ -1,6 +1,6 @@
 import { css } from '@emotion/react'
 import { useNavigate } from '@remix-run/react'
-import { WriteButton } from '~/components'
+import { Button } from '~/components'
 
 interface Props {
   name: string
@@ -14,13 +14,15 @@ export default function Banner({ name }: Props) {
         {name}님, 오늘의 소중한
         <br /> 꿈을 기록해보아요
       </div>
-      <WriteButton
+      <Button
+        background="#86A8FF"
+        fontColor="#ffffff"
         onClick={() => {
           navigate('/write')
         }}
       >
         꿈 기록하기
-      </WriteButton>
+      </Button>
     </section>
   )
 }
