@@ -1,4 +1,6 @@
-export default function Kakao() {
+import React from 'react'
+
+export default React.memo(function Kakao() {
   return (
     <svg
       width="25"
@@ -25,4 +27,4 @@ export default function Kakao() {
       </defs>
     </svg>
   )
-}
+})

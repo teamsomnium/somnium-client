@@ -1,4 +1,6 @@
-function Logo() {
+import React from 'react'
+
+export default React.memo(function Logo() {
   return (
     <svg
       width="131"
@@ -12,7 +14,5 @@ function Logo() {
         fill="#86A8FF"
       />
     </svg>
-  );
-}
-
-export default Logo;
+  )
+})
