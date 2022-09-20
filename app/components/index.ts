@@ -5,3 +5,4 @@ export { default as HeaderBurgerMenuButton } from './common/Header/HeaderBurgerM
 export { default as HeaderBackButton } from './common/Header/HeaderBackButton'
 export { default as Banner } from './Banner/Banner'
 export { default as Button } from './common/Button/Button'
+export { default as DreamHeader } from './common/Header/DreamHeader'
