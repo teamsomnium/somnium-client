@@ -38,6 +38,11 @@ const StyledHeading = css`
 const StyledDate = css`
   font-size: 1.6rem;
   text-decoration: underline;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
 `
 
 const StyledDatePicker = css`
