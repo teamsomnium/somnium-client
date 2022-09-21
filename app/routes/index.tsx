@@ -1,4 +1,11 @@
-import { Banner, Header, HeaderBurgerMenuButton, PageTemplate, DreamHeader } from '~/components'
+import {
+  Banner,
+  Header,
+  HeaderBurgerMenuButton,
+  PageTemplate,
+  DreamHeader,
+  Dream,
+} from '~/components'
 
 export default function Index() {
   return (
@@ -6,6 +13,7 @@ export default function Index() {
       <Header headerRight={<HeaderBurgerMenuButton />} />
       <Banner name="임창규" />
       <DreamHeader />
+      <Dream />
     </PageTemplate>
   )
 }
