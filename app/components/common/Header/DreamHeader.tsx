@@ -29,7 +29,7 @@ const Block = css`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 1.8rem;
+  padding: 1.8rem 0;
 `
 const StyledHeading = css`
   font-size: 1.6rem;

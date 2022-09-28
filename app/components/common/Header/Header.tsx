@@ -25,7 +25,7 @@ const Block = css`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 1.8rem;
+  margin: 0 -1.8rem;
 `
 
 const Title = css`

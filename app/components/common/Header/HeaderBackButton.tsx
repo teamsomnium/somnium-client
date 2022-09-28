@@ -1,8 +1,8 @@
-import * as I from '~/assets';
-import { css } from '@emotion/react';
+import * as I from '~/assets'
+import { css } from '@emotion/react'
 
 interface Props {
-  onClick?: () => void;
+  onClick?: () => void
 }
 
 export default function HeaderBackButton({ onClick }: Props) {
@@ -10,7 +10,7 @@ export default function HeaderBackButton({ onClick }: Props) {
     <button css={Block} onClick={onClick}>
       <I.LeftArrow />
     </button>
-  );
+  )
 }
 
 const Block = css`
@@ -19,7 +19,5 @@ const Block = css`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.8rem;
-  margin-left: -0.8rem;
   cursor: pointer;
-`;
+`
