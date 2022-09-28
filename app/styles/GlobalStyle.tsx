@@ -18,6 +18,10 @@ const style = css`
   html {
     background-color: #ededed;
   }
+  input:focus::placeholder,
+  textarea:focus::placeholder {
+    color: transparent;
+  }
 `
 
 export default function GlobalStyle() {
