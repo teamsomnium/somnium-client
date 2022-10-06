@@ -16,6 +16,7 @@ import useCanvas from '~/hooks/useCanvas'
 export default function Index() {
   const [pickedColor, setPickedColor] = useState<string>('#000000')
   const [rangeValue, setRangeValue] = useState<number>(5)
+  const [imageValue, setImageValue] = useState<string>('')
   const { canvasRef, startDraw, endDraw, draw, clearCanvas } = useCanvas({
     pickedColor,
     rangeValue,
@@ -29,6 +30,16 @@ export default function Index() {
 
   function handleRangeValue(e: React.ChangeEvent<HTMLInputElement>) {
     setRangeValue(Number(e.target.value))
+  }
+
+  function handleCanvasImage() {
+    const canvas = canvasRef.current
+    if (!canvas) return
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return
+
+    const image = canvas.toDataURL('image/png')
+    setImageValue(image)
   }
 
   return (
@@ -61,6 +72,7 @@ export default function Index() {
           fontColor="white"
           onClick={() => {
             navigate('/write/intro')
+            handleCanvasImage()
           }}
         >
           다음
