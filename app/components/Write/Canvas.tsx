@@ -1,4 +1,4 @@
-import React, { type PropsWithChildren } from 'react'
+import { type PropsWithChildren } from 'react'
 import { css } from '@emotion/react'
 
 interface Props extends React.HTMLAttributes<HTMLCanvasElement> {

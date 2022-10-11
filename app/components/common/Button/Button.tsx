@@ -1,5 +1,4 @@
 import { css } from '@emotion/react'
-import React from 'react'
 
 interface Props extends React.HTMLAttributes<HTMLButtonElement> {
   background: string

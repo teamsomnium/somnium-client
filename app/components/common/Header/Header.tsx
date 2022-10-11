@@ -1,4 +1,3 @@
-import React from 'react'
 import * as I from '~/assets'
 import { css } from '@emotion/react'
 import HeaderSide from '~/components/common/Header/HeaderSide'
